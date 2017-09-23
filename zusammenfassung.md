@@ -48,3 +48,14 @@ Ist $V$ ein Vektorraum über einen Körper $\mathbb{K}$ und $U$ ein Unterraum vo
 Sei dim$(V)=n<\infty$ und $U$ ein Unterraum von $V$. Sei dim$(U)=m$. Dann ist dim$(V/U)=n-m$.
 
 ## Gruppen
+
+Für eine Verknüpfung $\ast$ auf $M$ sei folgendes definiert:
+
+* $\ast$ heißt **kommutativ** $:= a\ast b = b\ast a$, mit $a,b \in M$.
+* $\ast$ heißt **assoziativ** $:= (a\ast b)\ast c = a \ast (b\ast c)$, mit $a,b,c \in M$.
+* $e\in M$ heißt **neutrales Element** von $\ast$ $:= e\ast a = a$ und $a \ast e = a$ $\forall a \in M$.
+* Für ein neutrales Element $e \in M$ und ein $m \in M$ heißt $m$ **invertierbar** $:= \exists m'\in M: m\ast m'= e$ und $m'\ast m = e$.
+
+$(G,\ast)$ heißt eine **Gruppe**, falls $\ast$ assoziativ ist, $G$ ein neutrales Element besitzt und alle $m\in G$ invertierbar sind. Ist $G$ zudem kommutativ, so heißt $G$ **abelsche Gruppe**. Die inversen Elemente und das neutrale Element der Gruppe sind jeweils eindeutig bestimmt. In *additiven* *(multiplikativen)* Gruppen wird das Verknüpfungssymbol $+ (\cdot)$ verwendet und $e$ heißt *Nullelement (Einselement)* und für $m \in G$ heißt $-m$ $(m^{-1})$ *Inverses*.
+
+$\mathrm{GL}_{n}(\mathbb{K})=\{A \in M_{nn}(\mathbb{K}) | A\ \mathrm{ist}\ \mathrm{invertierbar}\}$ bildet mit der Matrizenmultiplikation eine Gruppe, die *allgemeine lineare Gruppe*. Ebenso bildet $(\mathrm{GL}(V), \circ )$ für den Vektorraum $V$ und die Komposition von Abbildungen eine Gruppe, die *allgemeine lineare Gruppe* von $V$. Ist $\operatorname{dim}_{\mathbb{K}}(V)\geq 2$, so ist diese Gruppe nicht abelsch.
