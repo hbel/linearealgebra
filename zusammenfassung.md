@@ -58,4 +58,39 @@ Für eine Verknüpfung $\ast$ auf $M$ sei folgendes definiert:
 
 $(G,\ast)$ heißt eine **Gruppe**, falls $\ast$ assoziativ ist, $G$ ein neutrales Element besitzt und alle $m\in G$ invertierbar sind. Ist $G$ zudem kommutativ, so heißt $G$ **abelsche Gruppe**. Die inversen Elemente und das neutrale Element der Gruppe sind jeweils eindeutig bestimmt. In *additiven* *(multiplikativen)* Gruppen wird das Verknüpfungssymbol $+ (\cdot)$ verwendet und $e$ heißt *Nullelement (Einselement)* und für $m \in G$ heißt $-m$ $(m^{-1})$ *Inverses*.
 
-$\mathrm{GL}_{n}(\mathbb{K})=\{A \in M_{nn}(\mathbb{K}) | A\ \mathrm{ist}\ \mathrm{invertierbar}\}$ bildet mit der Matrizenmultiplikation eine Gruppe, die *allgemeine lineare Gruppe*. Ebenso bildet $(\mathrm{GL}(V), \circ )$ für den Vektorraum $V$ und die Komposition von Abbildungen eine Gruppe, die *allgemeine lineare Gruppe* von $V$. Ist $\operatorname{dim}_{\mathbb{K}}(V)\geq 2$, so ist diese Gruppe nicht abelsch.
+$\mathrm{GL}_{n}(\mathbb{K})=\{A \in M_{nn}(\mathbb{K}) | A\ \text{ist invertierbar}\}$ bildet mit der Matrizenmultiplikation eine Gruppe, die *allgemeine lineare Gruppe*. Ebenso bildet $(\mathrm{GL}(V), \circ )$ für den Vektorraum $V$ und die Komposition von Abbildungen eine Gruppe, die *allgemeine lineare Gruppe* von $V$. Ist $\operatorname{dim}_{\mathbb{K}}(V)\geq 2$, so ist diese Gruppe nicht abelsch.
+
+### Symmetrische Gruppen und Permutationen
+
+Für einen nichtleere Menge $M$ bildet die Menge der bijektiven Abbildungen $S_M=\{f:M\rightarrow M | f\ \text{ist bijektiv}\}$ zusammen mit der Komposition von Abbildungen die **symmetrische Gruppe auf $M$** $(S_M , \circ)$.
+
+Ist $M=\{1,\ldots ,n\}$, so heißt $S_n$ die **symmetrische Gruppe in $n$ Buchstaben** und $\sigma \in S_n$ heißt **Permutation**.
+
+Als Kurzschreibweise verwendet man üblicherweise:
+$$
+\sigma = \begin{pmatrix} 
+1 & 2 & 3 & \cdots & n \\
+\sigma(1) &\sigma(2) &\sigma(3) & \cdots & \sigma(n) \\
+\end{pmatrix}
+$$
+
+Für eine Permutation heißt die **Signumsfunktion/Signatur** $\operatorname{sgn}(\sigma)$:
+$$
+\operatorname{sgn}(\sigma) = \begin{cases}
+1 \ \text{falls die Anzahl Paare} (i,j)\ \text{mit}\ i>j\ \text{und}\ \sigma(i)<\sigma(j)\ \text{gerade ist} \\
+-1 \ \text{falls die Anzahl Paare} (i,j)\ \text{mit}\ i>j\ \text{und}\ \sigma(i)<\sigma(j)\ \text{ungerade ist} \\
+\end{cases}
+$$
+
+Ein Paar $i,j$ mit $i>j$ und $\sigma(i)<\sigma(j)$ heißt **Fehlstand** von $\sigma$.
+
+$\sigma \in S_n$ heißt **Transposition**, falls $\sigma$ genau zwei Elemente vertauscht und die übrigen festhält.
+$\sigma$ heißt **Nachbartransposition**, falls $\sigma$ zwei benachbarte Elemente $i$ und $i+1$ vertauscht.
+Transpositionen sind damit invers zu sich selbst.
+
+#. Für $n\geq 2$ ist jede Permutation ist eine Komposition von Transitionen.
+#. Jede Transposition ist eine Komposition einer ungeraden Anzahl von Nachbartranspositionen.
+#. $\operatorname{sgn}(\tau) = -1$ für alle Nachbartranspositionen.
+#. $\operatorname{sgn}(\sigma \circ \tau) =\operatorname{sgn}(\sigma)\cdot\operatorname{sgn}(\tau)$
+
+## Ringe
