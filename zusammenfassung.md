@@ -94,3 +94,31 @@ Transpositionen sind damit invers zu sich selbst.
 #. $\operatorname{sgn}(\sigma \circ \tau) =\operatorname{sgn}(\sigma)\cdot\operatorname{sgn}(\tau)$
 
 ## Ringe
+
+Ein **Ring** $(R,+,\cdot )$ist eine nichtleere Menge $R$ mit zwei Verknüpfungen $+$ und $\cdot$ auf der die folgenden Axiome gelten:
+
+#. $(R,+)$ ist eine abelsche Gruppe *(Addition)*
+#. $(R,\cdot )$ ist ein Monoid (also assoziativ und mit neutralem Element, in der Regel *1* genannt) *(Multiplikation)*
+#. $\forall a,b,c \in R:$ $a\cdot (b+c)=a\cdot b+a\cdot c$ und $(a+b)\cdot c = a\cdot c + b \cdot c$. *(Distributivgesetze)*
+#. Gilt in $(R,\cdot )$ das Kommutativgesetz, so heißt $R$ **kommutativer Ring**. 
+
+(Manche Bücher fordern für die multiplikative Verknüpfung auf einem Ring nur eine Halbgruppe und nennen die obige Struktur *unitärer Ring* oder *Ring mit 1).*
+
+Jeder *Körper* ist auch ein Ring. $(\mathbb{Z}/n\mathbb{Z},+,\cdot )$ ist ist kommutativer Ring, auf einem Vektorraum sei die Menge der linearen Abbildungen $\operatorname{End}(V)$, dann ist
+$(\operatorname{End}(V),+,\circ )$ der sogenannte **Endomorphismenring**.
+
+Für $r,s\in R$ heißt $r$ *invertierbar* falls $r\cdot s = s \cdot r = 1$. $r$ heißt dann **Einheit** von $R$ und die Menge der invertierbaren Elemente ist $R^\times$ und $(R^\times , \cdot)$ ist eine Gruppe, die **Einheitengruppe**. Für Multiplikationen, Potenzen und Inverse auf Ringen verwendet man die übliche verkürzte Schreibweise $ab, a^n$, und $a^{-1}$.
+
+Der Vektorraum $\mathbb{K}[T]$ bildet mit der Vektoraddition und der Polynommultiplikation $pq = \sum c_k T^k, c_k = \sum_{i+j=k} p_i q_j$ einen kommutativen Ring $(\mathbb{K}[T],+,\cdot)$, den sogenannten **Polynomring** und seine Einheitengruppe ist $\mathbb{K}\setminus\{ 0\}$.
+
+Rechenregeln für Ringe $(R,+,\cdot )$:
+
+#. $0\cdot a = a \cdot 0 = 0$ für alle $a \in R$.
+#. $(-1)a = -a = a \cdot (-1)$ für alle $a \in R$.
+#. $(-a)b=-(ab)=a(-b)$ für alle $a,b \in R$.
+#. $a\sum b_i = \sum ab_i$ für $a,b_i \in R$.
+#. $\left(\sum a_i\right)b = \sum a_ib$ für $a_i,b \in R$.
+
+
+
+
