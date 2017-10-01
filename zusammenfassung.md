@@ -1,5 +1,5 @@
 ---
-title: Zusammenfasung Vorlesung Lineare Algebra
+title: Zusammenfassung Vorlesung Lineare Algebra
 author: Hendrik Belitz
 date: September 2017
 lang: de-DE
@@ -119,6 +119,25 @@ Rechenregeln für Ringe $(R,+,\cdot )$:
 #. $a\sum b_i = \sum ab_i$ für $a,b_i \in R$.
 #. $\left(\sum a_i\right)b = \sum a_ib$ für $a_i,b \in R$.
 
+### Integritätsbereiche
 
+Ein kommutativer Ring $R$ heißt **Integritätsbereich** $\Leftrightarrow:\ \forall\ r_1, r_2 \in R: r_1 \neq 0 \wedge r_2 \neq 0 \Rightarrow r_1 r_2 \neq 0$. Für zwei Elemente $r,s \in R$ sagt man, dass $r$ $s$ **teilt**, kurz $r|s \Leftrightarrow \exists\ r' \in R: rr' = s$ und den folgenden Eigenschaften:
 
+#. $r|s \wedge s|t \Rightarrow r|t$
+#. $r|s \wedge s|r \Leftrightarrow r=us$, und $u$ ist eine *Einheit* von $R$.
+#. $r|s_1 \wedge r|s_2 \Rightarrow r|(s_1+s_2)$
+#. $r|s \Rightarrow \forall s' \in R: r|ss'$
 
+$t\in R, t = \operatorname{ggT}(r,s)$ heißt **größter gemeinsamer Teiler** von $r$ und $s$ falls:
+
+#. $t|r$ und $t|s$
+#. Falls $t'|r$ und $t'|s \Rightarrow t'|t$
+
+Da _ggT_ nicht unbedingt eine positive ganze Zahl sein muss, ist dieser nicht eindeutig. Es gilt aber:
+
+#. $u$ ist Einheit von $R \Rightarrow ut$ ist ein größter gemeinsamer Teiler von $r,s$.
+#. Sind $t,t'$ größte gemeinsame Teiler von $r,s$, so ist $t=ut'$
+
+### Der Ring der ganzen Zahlen
+
+**Division mit Rest:** $\forall\ a,b \in \mathbb{Z}, a\neq 0: \exists\ q \in \mathbb{Z}, r \in \mathbb{N}_0: b=qa+r \wedge 0 \leq r < |a|.$
