@@ -133,6 +133,8 @@ $t\in R, t = \operatorname{ggT}(r,s)$ heißt **größter gemeinsamer Teiler** vo
 #. $t|r$ und $t|s$
 #. Falls $t'|r$ und $t'|s \Rightarrow t'|t$
 
+Ist $\operatorname{ggT}(a,b)=1$, so heißen $a,b$ **teilerfremd**.
+
 Da _ggT_ nicht unbedingt eine positive ganze Zahl sein muss, ist dieser nicht eindeutig. Es gilt aber:
 
 #. $u$ ist Einheit von $R \Rightarrow ut$ ist ein größter gemeinsamer Teiler von $r,s$.
@@ -141,3 +143,18 @@ Da _ggT_ nicht unbedingt eine positive ganze Zahl sein muss, ist dieser nicht ei
 ### Der Ring der ganzen Zahlen
 
 **Division mit Rest:** $\forall\ a,b \in \mathbb{Z}, a\neq 0: \exists\ q \in \mathbb{Z}, r \in \mathbb{N}_0: b=qa+r \wedge 0 \leq r < |a|.$
+
+Zu $a,b \in \mathbb{Z}, a,b \neq 0$ gibt einen größten gemeinsamen Teiler $d$ und zwei ganze Zahlen $s,t$ so dass $d=sa+tb$. Der Beweis erfolgt über den *euklidschen Algorithmus*:
+
+$r_1 = b-q_1a$   
+$r_2 = a-q_2r_1$   
+$\cdots$   
+$r_n = r_{n-2}-q_n r_{n-1}$
+
+**Hauptsatz der elementaren Zahlentheorie:** Jede ganze Zahl $a, |a|>1$ besitzt genau eine Darstellung
+
+$$
+a=ep_1^{m_1}\cdots p_r^{m_r}=e\prod p_i^{m_i}
+$$
+
+mit $e\in \{-1,-1\}$, Primzahlen $p_1 < p_2 < \cdots < p_r$ und $m_1,\ldots ,m_r \geq 1$.
