@@ -158,3 +158,26 @@ a=ep_1^{m_1}\cdots p_r^{m_r}=e\prod p_i^{m_i}
 $$
 
 mit $e\in \{-1,-1\}$, Primzahlen $p_1 < p_2 < \cdots < p_r$ und $m_1,\ldots ,m_r \geq 1$.
+
+### Polynomringe 
+
+Mit der folgenden *Division mit Rest* lassen sich die Begriffe *teilerfremd* und *ggT* ebenfalls wie oben auf $\mathbb{K}[T]$ definieren und auch der euklidische Algorithmus lässt sich hier anwenden. Analog zum obigen Hauptsatz lassen sich Polynome eindeutig in Faktoren zerlegen, die irreduzible Polynome sind (s.u.).
+
+$$
+\text{Zu Polynomen}\ f,g\in \mathbb{K}[T] \text{mit} f\neq 0\ \text{gibt es eindeutig bestimmte Polynome}\ q,e \in \mathbb{K}[T]\ \text{mit}
+$$
+$$
+g=qf+r \wedge \operatorname{Grad}(r)<\operatorname{Grad}(f). 
+$$
+
+Ein Polynom $f=\sum a_i T^i \in \mathbb{K}[T]$ heißt **normiert** falls $a_n=1$. Es heißt **irreduzibel** falls aus $f=gh$ folgt, dass $g$ oder $h$ invertierbar sind. Ansonsten heißt $f$ **reduzibel**. Damit sind irreduzible Polymome entweder teilerfremd oder gleich.
+
+$f=aT+b, f\in\mathbb{K}[T]$ heißt **linear**. Lässt sich ein Polynom in lineare Polynomfaktoren zerlegen, so heißen diese **Linearfaktoren**.
+
+Sei $R$ ein Ring und der Körper $\mathbb{K}$ ein Unterring von $R$. Für $r \in R$ und $f \in \mathbb{K}[T]$ heißt dann $f(r)=\sum a_i r^i\ \in R$ **Einsetzen** von $r$ in $f$. Dies ist ein *Ringhomomorphismus* von $\mathbb{K}[T]$ nach $R$.
+
+$\lambda \in \mathbb{K}$ heißt **Nullstelle** von $f$ falls $f(\lambda)=0$. $\lambda$ ist genau dann eine Nullstelle von $f$, falls $f=(T-\lambda)q$ für $q \in \mathbb{K}[T]$. Wendet man dies sukzessive an, so sieht man dass ein Polynom von Grad $n$ maximal $n$ Nullstellen haben kann. 
+
+Für $f,g \in \mathbb{K}[T]$ heißt $f$ **Vielfaches** von $g$ falls $g|f$. Das Polynom kleinsten Grades, welches Vielfaches von Polynomen  $g_1,\ldots,g_n$ ist, heißt **kleinstes gemeinsames Vielfaches**.
+
+
