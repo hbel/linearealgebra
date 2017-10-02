@@ -190,3 +190,35 @@ Der *Betrag* einer komplexen Zahl $z=a+ib$ ist
 $$
 |z| = \sqrt{z\bar{z}}=\sqrt{a^2+b^2}
 $$
+
+### Quotientenkörper von Integritätsbereichen
+
+Sei für den Integritätsbereich $R\ R'=R\setminus \{0\}$. Dann lässt sich für $(a,b) \in R \times R'$ die folgende Äquivalenzrelation definieren:
+$$
+(a,b)\sim (c,d) \Leftrightarrow ad = bc
+$$
+Die Äquivalenzklasse die $(a,b)$ enthält heißt dann **Quotient** und wird geschrieben als $\frac{a}{b}$.
+
+Ist nun $Q=\{\frac{a}{b}|a,b \in R, b \neq 0\}$, dann ist $(Q,+,\cdot)$ ein Körper, der sogenannte **Quotientenkörper** von $R$. Dieser enthält $R$, denn $\forall\ r \in R: \frac{r}{1} \in Q$. So ist $\mathbb{Q}$ der Quotientenkörper zu $\mathbb{Z}$ und der *Körper der rationalen Funktionen* $\mathbb{K}(T)$
+der Quotientenkörper zum Polynomring $\mathbb{K}[T]$.
+
+**Hauptsatz der Algebra:** In $\mathbb{C}[T]$ zerfällt jedes nicht-konstante Polynom in seine *Linearfaktoren*, denn die irreduziblen Polynome in $\mathbb{C}$ sind die normierten Polynome mit Grad 1: $\{ T + a | a \in \mathbb{C} \}$.
+
+Die Menge der irreduziblen Polynome in $\mathbb{R}[T]$ ist: 
+$$
+\{ T + a | a \in \mathbb{R} \} \cup \{ (T - \lambda)(T - \bar{\lambda}) | \lambda \in \mathbb{C} \setminus \mathbb{R} \} 
+$$
+
+Und für den Polynomring der rationalen Polynome:
+$$
+\forall\ n \in \mathbb{N}: \exists f \in \mathbb{Q}[T], \operatorname{Grad}(f)=n: f\ \text{ist irreduzibel.}
+$$
+
+Sowie für endliche Körper:
+$$
+p\ \text{sei eine Primzahl:}\ \forall\ n \in \mathbb{N}: \exists f \in \mathbb{F}_p[T], \operatorname{Grad}(f)=n: f\ \text{ist irreduzibel.}
+$$
+
+Ein Körper, für den jedes nicht konstante Polynom in Linearfaktoren zerfällt, heißt **algebraisch abgeschlossen** (für die Körper hier ist das nur für $\mathbb{C}$ der Fall).
+
+
