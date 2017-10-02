@@ -180,4 +180,13 @@ $\lambda \in \mathbb{K}$ heißt **Nullstelle** von $f$ falls $f(\lambda)=0$. $\l
 
 Für $f,g \in \mathbb{K}[T]$ heißt $f$ **Vielfaches** von $g$ falls $g|f$. Das Polynom kleinsten Grades, welches Vielfaches von Polynomen  $g_1,\ldots,g_n$ ist, heißt **kleinstes gemeinsames Vielfaches**.
 
+## Körper
 
+$(\mathbb{Z}/p\mathbb{Z},+,\cdot )$ ist genau dann ein Körper, falls $p$ eine Primzahl ist und wird kurz mit $\mathbb{F}_p$ bezeichnet.
+
+$(\mathbb{R}\times\mathbb{R},+,\cdot )$ mit $(a,b)+(c,d)=(a+c,b+d)$ und $(a,b)(c,d)=(ac-bd,ad+bc)$ ist ein Körper, der **Körper der komplexen Zahlen** $(\mathbb{C},+,\cdot )$. Zur gewohnten Schreibweise $z=x+iy$ kommt man, indem man $i=(0,1)$ setzt. Damit werden dann auch die reellen Zahlen zur Teilmenge der komplexen Zahlen.
+
+Der *Betrag* einer komplexen Zahl $z=a+ib$ ist
+$$
+|z| = \sqrt{z\bar{z}}=\sqrt{a^2+b^2}
+$$
