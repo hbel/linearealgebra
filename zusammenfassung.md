@@ -221,4 +221,59 @@ $$
 
 Ein Körper, für den jedes nicht konstante Polynom in Linearfaktoren zerfällt, heißt **algebraisch abgeschlossen** (für die Körper hier ist das nur für $\mathbb{C}$ der Fall).
 
+# Kurseinheit 2: Determinanten
 
+Matrizen können nicht nur über Körper, sondern auch über kommutative Ringe gebildet werden. Die Rechenregeln für Addition, Skalarmultiplikation und Matrizenmultiplikation bleiben dabei erhalten.
+Sei $n\in \mathbb{N}$ und $R$ ein kommutativer Ring. Dann ist $(M_{nn}(R),+,\cdot )$ ein Ring. Da damit aber nicht jedes Element invertierbar ist (sondern nur $M_{nn}(R)^{\times})$), kann allerdings
+nicht der Gaussalgorithmus zur Lösung verwendet werden.
+
+## Transponierte Matrizen
+
+Für $A=(a_{ij})$ ist $A^T=(a_{ji})$ die **transponierte Matrix**. Für diese gelten folgende Rechenregeln:
+
+#. $(A+A')^T = A^T + A'^T$
+#. $(rA)^T = rA^T$
+#. $(A^T)^T = A$
+#. $(AB)^T = B^T A^T$
+
+Wenn $A$ invertierbar ist, dann ist auch $A^T$ invertierbar und $(A^T)^{-1} = (A^{-1})^T$. Ebenso ist $\operatorname{Rg}(A)=\operatorname{Rg}(A^T)$.
+
+## Determinanten
+
+**Leibnizformel:** Die **Determinante** $\det(A)$ oder $|A|$ von $A=(a_{ij}) \in M_{nn}(R)$ ist das Ringelemenent
+
+$$
+\sum_{\sigma \in S_n} \operatorname{sgn}(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}\cdots a_{n\sigma(n)}\ \in R
+$$
+
+Für $n=2,3$ folgt daraus die **Sarrus**-Regel: Determinante gleich Summe der Diagonalen - Summe der Gegendiagonalen.
+
+Die Determinante von $A^T$ ist gleich der Determinante von $A$.
+
+### Spezialfälle
+
+Für eine *obere* oder *untere Dreiecksmatrix* $A$ ist die Determinante gleich dem Produkt der Diagonalelemente: $\det(A)=\prod a_{ii}$.
+
+Für eine Matrix $A$ mit einer Nullzeile oder -spalte ist $\det(A)=0$. Gleiches gilt für Matrizen in denen zwei Zeilen oder Spalten identisch sind.
+
+Für Determinanten von *Elementarmatrizen* (diese werden für $M_{mn}(R)$ wie auf Körpern definiert und sind wie diese invertierbar) gilt:
+
+#. $\det(P_{ij})=-1$
+#. $\det(D_i(r))=r$
+#. $\det(T_{ij}(s))=1$
+
+Daraus folgt
+
+#. $\det(P_{ij}A)=-\det(A)$
+#. $\det(D_i(r)A)=r\cdot \det(A)$
+#. $\det(T_{ij}(s)A)=\det(A)$
+
+und allgemeinen $\det(E_s\cdots E_1A)=\det(E_s)\cdots\det(E_1)\det(A)$.
+
+### Determinanten von Matrizen über Körpern
+
+\ldots lassen sich durch Anwendung von Zeilenumformungen gewinnen, die aus einer allgemeinen Matrix eine Dreiecksmatrix macht (oder die zeigen dass es eine Nullzeile gibt).
+
+### Determinantenmultiplikationssatz
+
+Sei $R$ ein Integritätsbereich, $R\neq \{0\}$ und $A,B \in M_{nn}(R)$. Dann ist $\det(AB)=\det(A)\det(B)$.
