@@ -248,7 +248,7 @@ $$
 
 Für $n=2,3$ folgt daraus die **Sarrus**-Regel: Determinante gleich Summe der Diagonalen - Summe der Gegendiagonalen.
 
-Die Determinante von $A^T$ ist gleich der Determinante von $A$.
+Die Determinante von $A^T$ ist gleich der Determinante von $A$. 
 
 ### Spezialfälle
 
@@ -274,6 +274,21 @@ und allgemeinen $\det(E_s\cdots E_1A)=\det(E_s)\cdots\det(E_1)\det(A)$.
 
 \ldots lassen sich durch Anwendung von Zeilenumformungen gewinnen, die aus einer allgemeinen Matrix eine Dreiecksmatrix macht (oder die zeigen dass es eine Nullzeile gibt).
 
+Ist $\det(A)\neq 0$, so ist $A$ invertierbar.
+
 ### Determinantenmultiplikationssatz
 
 Sei $R$ ein Integritätsbereich, $R\neq \{0\}$ und $A,B \in M_{nn}(R)$. Dann ist $\det(AB)=\det(A)\det(B)$.
+
+## Adjunktensatz
+
+Es werden nun wieder Matrizen über kommutative Ringe betrachtet. Sei $A=(a_{ij})\in M_{nn}(R)$ und $s,t < n$ vorgegeben. Dann ist $A_{st}$ die Matrix die aus $A$ durch Streichung der $s$-ten Zeile und $t$-ten Spalte entsteht. Diese heißt eine *Untermatrix* von $A$.
+
+Die **Adjunkte** $A^{Ad}$ von $A$ ist gleich $(1)$ falls $n=1$, und für $n>1$:
+$$
+A^{Ad} = (a'_{ij})\ \text{mit}\ a'_{ij}=(-1)^{i+j}det(A_{ji})
+$$
+Und damit ist für $A$ mit $a_{it} = 0 \forall i\neq s$ für gegebene $s,t<n$
+$$
+\det(A) = (-1)^{s+t}a_{st}det(A_{st})
+$$
