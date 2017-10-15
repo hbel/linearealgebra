@@ -286,14 +286,14 @@ Es werden nun wieder Matrizen über kommutative Ringe betrachtet. Sei $A=(a_{ij}
 
 Die **Adjunkte** $A^{Ad}$ von $A$ ist gleich $(1)$ falls $n=1$, und für $n>1$:
 $$
-A^{Ad} = (a'_{ij})\ \text{mit}\ a'_{ij}=(-1)^{i+j}det(A_{ji})
+A^{Ad} = (a'_{ij})\ \text{mit}\ a'_{ij}=(-1)^{i+j}\det(A_{ji})
 $$
 Und damit ist für $A$ mit $a_{it} = 0\ \forall i\neq s$ für gegebene $s,t<n$
 $$
-\det(A) = (-1)^{s+t}a_{st}det(A_{st})
+\det(A) = (-1)^{s+t}a_{st}\det(A_{st})
 $$
 
-**Adjunktensatz:** Sei $R$ ein kommutativer Ring und $A\in M_{nn}(R)$. Dann ist $AA^{Ad}=A^{Ad}A=det(A)I_n$. Damit folgt, dass $A$ invertierbar ist, falls
+**Adjunktensatz:** Sei $R$ ein kommutativer Ring und $A\in M_{nn}(R)$. Dann ist $AA^{Ad}=A^{Ad}A=\det(A)I_n$. Damit folgt, dass $A$ invertierbar ist, falls
 $\det(A) \in R$ invertierbar ist und $A^{-1}=\det(A)^{-1}A^{Ad}$.
 
 **Laplacescher Entwicklungssatz:** $R$ kommutativer Ring und $A=(a_{ij}) \in M_{nn}(R)$. Dann gilt für $1\leq i,j \leq n$:
@@ -306,5 +306,5 @@ $$
 
 **Cramersche Regel:** Für $A\in M_{nn}(\mathbb{K})$ und $A$ invertiertbar hat $A$ genau eine Lösung $\lambda=(\lambda_i)$. Dann ist
 $$
-\lambda_i = det(A)^{-1}det(A_i)
+\lambda_i = \det(A)^{-1}\det(A_i)
 $$
