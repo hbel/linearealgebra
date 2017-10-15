@@ -6,8 +6,30 @@ lang: de-DE
 geometry: a4paper
 textwidth: 16cm
 geometry: margin=2cm
-fontsize: 12pt
+fontsize: 10pt
 ...
+
+# Zusammenfassung Grundlagen der linearen Algebra
+
+Ein $\mathbb{K}$-**Vektorraum** ist eine Menge $V$ mit einer abelschen Gruppe $(V,+)$ und einer *skalaren Multiplikation* $\mathbb{K}\times V \rightarrow V,\ (s,v) \mapsto s\cdot b$ und den resultierenden Distributivgesetzen $a(v+w)=av+aw$ und $(a+b)v=av+bv$.
+
+$U \subseteq V$ heißt *Unterraum* von $V$ falls $U$ mit den Verknüpfungen von $V$ einen Vektorraum bildet, z.B. trivialerweise $U=\{0\}$ oder $U=V$. 
+
+*Unterraumkriterien*:
+
+#. $0\in V \Rightarrow 0 \in U$
+#. $\forall\ u_1,u_2 \in U \Rightarrow u_1+u_2 \in U$
+#. $\forall\ k \in \mathbb{K}, u \in U \Rightarrow ku \in U$
+
+Mit $U_1,U_2,\ldots ,U_n$ Unterräume von $V$ ist auch $U_1 \cap U_2 \cap \cdots \cap U_n$ Unterraum von $V$. Die *Summe* $U_1 + U_2+\cdots + U_n =\{u_1+u_2+\cdots +u_n|u_1\in U_1, u_2\in U_2, \ldots u_n \in U_n\}$ ist Unterraum von $V$. Wenn gleichzeitig der Durchschnitt die leere Menge ist, heißt die Summe *echt*.
+
+Für $v_1, \ldots , v_m \in V$ und $a_1, \ldots, a_m \in \mathbb{K}$ heißt $\sum_i a_i v_i$ **Linearkombination** der $v_i$. Ist $S\subseteq V$ so heißt die Menge aller Linearkombinationen in $S$ *lineare Hülle* von $S:\ <S>$, $<S>$ heißt auch der von $S$ erzeugte Unterraum von $V$. Falls $V=<S>$ heißt $S$ **Erzeugendensystem** von $V$. Sofern $S$ endlich ist, heißt $V$ *endlich erzeugt*. 
+
+Vektoren $v_1, \ldots , v_m \in V$ heißen **linear unabhängig** $\Leftrightarrow\ \sum_m a_i v_i = 0$ nur falls alle $a_i=0$.
+Ist $V=<v_1, \ldots , v_m>$ und sind $v_1, \ldots , v_m$ linear unabhängig, so heißen sie eine **Basis** von $V$. Die **Dimension** $\dim(V)$ ist $0$, falls $V=\{0\}$, gleich $\infty$ falls $V$ nicht endlich erzeugt und gleich $n$ falls eine Basis von $V$ genau $n$ Vektoren enthält.
+
+Ist $U$ Unterraum von $V$, so ist $\dim(U)\leq\dim(V)$ und $\dim(U)=\dim(V) \Leftrightarrow U=V$.
+Für $U,W$ Unterräume von $V$ ist $\dim(U+W)=\dim(U)+\dim(W)-\dim(U\cap W)$.
 
 # Kurseinheit 1: Algebraische Strukturen
 
